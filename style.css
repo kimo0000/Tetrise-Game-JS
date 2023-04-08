@@ -1,0 +1,106 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica;
+}
+
+.container {
+    width: 50%;
+    margin: 100px auto;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: yellowgreen;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+header p {
+    font-weight: 700;
+}
+
+header p span {
+    color: #f50;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+button {
+    padding: 5px 8px;
+    background-color: #f50;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0 4px rgb(161, 60, 9);
+    transition: .3s;
+}
+
+button:active {
+    box-shadow: 0 0 rgb(161, 60, 9);
+    transform: translateY(4px);
+    background-color: green;
+}
+
+.grid {
+    width: 200px;
+    height: 400px;
+    background-color: yellowgreen;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 8px;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.active {
+    background-color: blueviolet;
+    border: 1px solid #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7) inset;
+}
+
+.grid_child {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: yellowgreen;
+    border-radius: 8px;
+}
+
+.grid_child div {
+    width: 20px;
+    height: 20px;
+}
